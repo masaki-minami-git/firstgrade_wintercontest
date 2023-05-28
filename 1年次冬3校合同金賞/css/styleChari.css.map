@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,OAAO;CAC5B;;AACD,AAAA,MAAM,CAAA;EACF,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,cAAc;CAEzB;;AACD,AAAA,MAAM,CAAA;EACF,gBAAgB,EAAE,OAAO;CAE5B",
+    "sources": [
+        "../scss/styleChari.scss"
+    ],
+    "names": [],
+    "file": "styleChari.css"
+}

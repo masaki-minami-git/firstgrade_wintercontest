@@ -1,0 +1,717 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 2;
+}
+
+h2 {
+  font-size: 2.1rem;
+  line-height: 2.2285;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.333;
+}
+
+h4, h5, h6 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+input,
+button,
+select,
+textarea,
+button {
+  background-color: transparent;
+  border: 1px #8b8b8b solid;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+body header {
+  backdrop-filter: blur(5px);
+  background-color: rgba(160, 160, 160, 0.075);
+  box-shadow: rgba(134, 134, 134, 0.3) 0.5px 1px 1px;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 78px;
+}
+
+body header a:link, body header a:visited, body header a:hover, body header a:active {
+  color: #7d2030;
+  text-decoration: none;
+}
+
+body header h1 {
+  line-height: 78px;
+  padding-left: 1rem;
+  font-size: 2.4rem;
+  font-family: 'Playfair Display', serif;
+  color: #7d2030;
+}
+
+body header h2 {
+  font-size: 2.1rem;
+}
+
+body nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body nav ul a {
+  border-bottom: #d3d3d3  1px solid;
+  width: 50%;
+  height: 4rem;
+}
+
+body nav ul a li {
+  text-align: center;
+  line-height: 4rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+body nav ul a:link, body nav ul a:visited, body nav ul a:hover, body nav ul a:active {
+  color: #4c4a4a;
+  text-decoration: none;
+}
+
+body nav ul a:nth-of-type(1) {
+  border-right: #d3d3d3  1px solid;
+}
+
+body main {
+  min-height: 80vh;
+}
+
+body main .lineF {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+body main .lineF .lineF2 {
+  width: 100%;
+  object-fit: contain;
+}
+
+body main .lineFrend {
+  display: none;
+}
+
+body main .listWrap {
+  margin: 0 auto;
+  width: 100%;
+}
+
+body main .listWrap .categorySearch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f8fa;
+  width: 100vw;
+}
+
+body main .listWrap .categorySearch .listFuncategoryConte {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+body main .listWrap .categorySearch .listFuncategoryConte .listFun select {
+  text-align: center;
+  height: 3.5rem;
+  border: 1px #d3d3d3 solid;
+  background-color: #fff !important;
+  outline: none;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #8b8b8b;
+  border-radius: 5px;
+  width: 90%;
+  z-index: 2;
+  background: transparent;
+}
+
+body main .givFunConte {
+  margin-top: 10%;
+}
+
+body main .funListContainer {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body main .funListContainer .funListBox {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  margin-top: 10%;
+  width: 48%;
+  min-height: auto;
+}
+
+body main .funListContainer .funListBox a:link, body main .funListContainer .funListBox a:visited, body main .funListContainer .funListBox a:hover, body main .funListContainer .funListBox a:active {
+  color: #4c4a4a;
+  text-decoration: none;
+}
+
+body main .funListContainer .funListBox a .funImg {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+body main .funListContainer .funListBox a .funImg img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+body main .funListContainer .funListBox a .listNakami {
+  margin-bottom: 2rem;
+}
+
+body main .funListContainer .funListBox a .listNakami .listTitle {
+  padding-left: 3%;
+  line-height: 2;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+body main .funListContainer .funListBox a .funListMini {
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding-left: 5%;
+}
+
+body main .funListContainer .funListBox a .funListMini .listYen {
+  height: 3rem;
+  width: 50%;
+}
+
+body main .funListContainer .funListBox a .funListMini .listYen .listYenB {
+  font-size: 1rem !important;
+}
+
+body main .funListContainer .funListBox a .funListMini .listYen .listYenM {
+  font-size: 1.1rem !important;
+  padding-left: 3%;
+  font-weight: bold;
+}
+
+body main .funListContainer .funListBox a .funListMini .timeStamp {
+  width: 50%;
+  height: 3rem;
+}
+
+body main .funListContainer .funListBox a .funListMini .timeStamp .timeStampP {
+  text-align: right;
+  font-size: 1rem !important;
+  padding-right: 3%;
+  line-height: 3rem;
+}
+
+body main .paging {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+body main .paging .pageAnk {
+  margin: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background-color: rgba(125, 32, 48, 0.8);
+}
+
+body main .paging .pageAnk a:link, body main .paging .pageAnk a:visited, body main .paging .pageAnk a:hover, body main .paging .pageAnk a:active {
+  text-decoration: none;
+}
+
+body main .paging .pageAnk a {
+  color: #f5f8fa;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+
+body main .container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f5f8fa;
+  min-height: 80vh;
+}
+
+body main .container .torokuKanD {
+  margin-top: 5rem;
+}
+
+body main .container .torokuKanD .tourokuKanA {
+  display: block;
+}
+
+body main .container .torokuKanD .toukouKanOutputFun .toukouKanOutputFunA {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+body main .container .giveMoney .loginForm .giveMoneyP {
+  padding-left: 5%;
+}
+
+body main .container .checkGiveConte .CheckGiveH2 {
+  margin-top: 2rem;
+  text-align: center;
+  color: #4c4a4a;
+}
+
+body main .container .checkGiveConte .CheckGiveP {
+  color: #4c4a4a;
+  margin-top: 2rem;
+  padding-left: 5%;
+}
+
+body main .container .checkGiveConte .button {
+  display: block;
+  width: 90%;
+  color: #fff;
+  background-color: #3ac287;
+  box-shadow: none;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 15px;
+  font-weight: bold;
+  margin-bottom: 10%;
+  border-radius: 5px;
+}
+
+body main .container .checkOutputKakunin {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #4c4a4a;
+  padding: 5rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+}
+
+body main .container .checkOutputFunConte {
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+body main .container .checkOutputFunConte .checkOutputImg {
+  margin-bottom: 2rem;
+}
+
+body main .container .checkOutputFunConte .checkOutputImg img {
+  width: 100%;
+  object-fit: contain;
+}
+
+body main .container .checkOutputFunConte h3 {
+  text-align: center;
+  font-size: 2.1rem;
+  color: #4c4a4a;
+  margin-bottom: 2rem;
+}
+
+body main .container .checkOutputFunConte .checkMinConte {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+body main .container .checkOutputFunConte .checkMinConte .checkName p {
+  color: #4c4a4a;
+}
+
+body main .container .checkOutputFunConte .checkMinConte .checkName i {
+  color: #8b8b8b;
+}
+
+body main .container .checkOutputFunConte .checkMinConte .checkGenre p {
+  color: #4c4a4a;
+}
+
+body main .container .checkOutputFunConte .checkMinConte .checkGenre i {
+  color: #8b8b8b;
+}
+
+body main .container .checkOutputFunConte .checkMinConte2 {
+  padding-bottom: 2rem;
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2.6px 0px;
+}
+
+body main .container .checkOutputFunConte .checkMinConte2 .checkMinConteKingaku {
+  padding-left: 10%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 10%;
+  color: #4c4a4a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body main .container .checkOutputFunConte .checkMinConte2 .checkMinConteKingaku .checkMinConteKingakuMin p:nth-of-type(1) {
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+
+body main .container .checkOutputFunConte .checkMinConte2 .checkMinConteKingaku .checkMinConteKingakuMin p:nth-of-type(2) {
+  line-height: 2rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+body main .container .checkOutputFunConte .checkMinConte2 .checkMinConteKingaku .checkMinConteKingakuMin2 p:nth-of-type(1) {
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+
+body main .container .checkOutputFunConte .checkMinConte2 .checkMinConteKingaku .checkMinConteKingakuMin2 p:nth-of-type(2) {
+  line-height: 2rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+body main .container .checkOutputFunConte .checkMatter {
+  color: #4c4a4a;
+  padding: 10%;
+}
+
+body main .container .checkOutputFunConte .checkMatter .checkMatterT {
+  height: 3rem;
+}
+
+body main .container .checkOutputFunConte .sienSuru {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: #e75d65;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+}
+
+body main .container .checkOutputFunConte .sienSuru .sienSuru2 {
+  text-align: center;
+  display: block;
+}
+
+body main .container .checkOutputFunConte .sienSuru a:link, body main .container .checkOutputFunConte .sienSuru a:visited, body main .container .checkOutputFunConte .sienSuru a:hover, body main .container .checkOutputFunConte .sienSuru a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+body main .container .loginTitle {
+  color: #4c4a4a;
+  padding: 5rem;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: #c3c3c3 1px solid;
+  width: 200px;
+}
+
+body main .container .loginForm {
+  color: #8b8b8b;
+  margin-top: 5rem;
+  padding-bottom: 10rem !important;
+  line-height: 3rem;
+  text-align: center;
+  padding: 30px;
+}
+
+body main .container .loginForm .cateIn {
+  margin-top: 2rem;
+}
+
+body main .container .loginForm span {
+  margin-left: 30px;
+}
+
+body main .container .loginForm p {
+  text-align: left;
+}
+
+body main .container .loginForm input:nth-of-type(1) {
+  padding: 15px;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+body main .container .loginForm input:nth-of-type(2) {
+  padding: 15px;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+body main .container .loginForm input:nth-of-type(3) {
+  padding: 15px;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+body main .container .loginForm input:nth-of-type(4) {
+  padding: 15px;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+body main .container .loginForm textarea {
+  height: 300px;
+  padding: 15px;
+  width: 90%;
+}
+
+body main .container .loginForm button {
+  display: block;
+  width: 90%;
+  color: #fff;
+  background-color: #3ac287;
+  box-shadow: none;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 15px;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+body main .container .loginForm .giveM {
+  background-color: #3ac287;
+  border-radius: 5px;
+}
+
+body main .container .loginForm .checkFunPut {
+  display: block;
+  width: 90%;
+  color: #fff;
+  background-color: #51c3d3;
+  box-shadow: none;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 15px;
+  font-weight: bold;
+}
+
+body main .container .loginForm select {
+  text-align: center;
+  height: 3.5rem;
+  border: 1px #d3d3d3 solid;
+  background-color: #fff !important;
+  outline: none;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #45a3af;
+  border-radius: 5px;
+  width: 90%;
+  z-index: 2;
+  background: transparent;
+}
+
+body main .container .addKaiin {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+body main .loginErrorConte {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f5f8fa;
+  min-height: 80vh;
+}
+
+body main .loginErrorConte div {
+  padding-top: 10%;
+}
+
+body main .loginErrorConte p {
+  line-height: 2rem;
+}
+
+body main .loginErrorConte p:nth-of-type(3) {
+  margin-top: 5rem;
+}
+
+body main .btn {
+  display: block;
+  width: 90%;
+  color: #fff;
+  background-color: #51c3d3;
+  box-shadow: none;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 15px;
+  font-weight: bold;
+}
+
+body footer {
+  background-color: #7d2030;
+  color: #ddd;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+body footer .footConteiner {
+  display: flex;
+  justify-content: space-around;
+}
+
+body footer .footConteiner .footerBokin {
+  margin: 10% 0;
+  width: 30%;
+}
+
+body footer .footConteiner .footerBokin a {
+  display: block;
+}
+
+body footer .footConteiner .footerBokin a:link, body footer .footConteiner .footerBokin a:visited, body footer .footConteiner .footerBokin a:hover, body footer .footConteiner .footerBokin a:active {
+  color: #ddd;
+  text-decoration: none;
+}
+
+body footer .footConteiner .footerTop {
+  margin: 10% 0;
+  width: 30%;
+}
+
+body footer .footConteiner .footerTop a {
+  display: block;
+}
+
+body footer .footConteiner .footerTop a:link, body footer .footConteiner .footerTop a:visited, body footer .footConteiner .footerTop a:hover, body footer .footConteiner .footerTop a:active {
+  color: #ddd;
+  text-decoration: none;
+}
+
+body footer .copyright {
+  padding: 3%;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 420px !important;
+  }
+  .footConteiner {
+    height: 100px !important;
+  }
+  .footConteiner .footerBokin {
+    margin-top: 5rem !important;
+  }
+  .footConteiner .footerTop {
+    margin-top: 5rem !important;
+  }
+  .funListContainer {
+    width: 50%  !important;
+  }
+  .lineFrend {
+    right: 3rem;
+    margin-top: 3rem;
+    position: fixed;
+    width: 300px;
+    z-index: -10;
+    display: block !important;
+  }
+  .lineFrend img {
+    width: 100%;
+  }
+  .lineF {
+    display: none !important;
+  }
+}
+
+#parsentConte {
+  position: relative;
+  background-color: #e4e4e4;
+  overflow: hidden;
+  width: 80%;
+  height: 18px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#parsentConte #width {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-135deg, #ff4f44, #ffbf3d);
+  height: 18px;
+  width: 0%;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+#parsentConte #parsentMath {
+  font-size: 12px;
+  color: #fff;
+  z-index: 999;
+}
+
+#parsentConte .parsentMath2 {
+  font-size: 12px;
+  margin-left: 5%;
+  position: absolute;
+  color: #fff;
+  z-index: 999;
+}
+/*# sourceMappingURL=styleFun.css.map */

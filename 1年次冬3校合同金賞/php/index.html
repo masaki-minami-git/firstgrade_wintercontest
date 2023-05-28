@@ -1,0 +1,253 @@
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="../css/aos.css">
+    <script src="../js/aos.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>アニマルプロテクション</title>
+  </head>
+  <body class="color">
+    <nav class="navi">
+        <ul>
+            <li><a href="#redlist"><span>Red</span> Listとは</a></li>
+            <li><a href="#animalNow">動物たちの<span>今</span></a></li>
+            <li><a href="#sdgsAnk">SD<span>G</span>s</a></li>
+            <li><a href="../php/input.php"><span>募金</span>する</a></li>
+            <li><a href="../php/login.php"><span>活動</span>する</a></li>
+        </ul>
+    </nav>
+  <header>
+        <video src="../movie/tigerM.mov" autoplay muted></video>
+        <div class="demo-1 imgloaded">
+            <div class="glitch">
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+            <div class="glitch__img"></div>
+        </div>
+        <div id="spLogo">
+           <p id="logo1">Animal</p>
+            <a class="logoAnk" href="./index.html"><p id="logo2">Protection</p></a>
+        </div>
+        <div class="logoWrapper">
+            <!-- <div class="topLogo"><a href="../php/inde.html"></a></div> -->
+            <div class="test1">
+                <p class="logo1">Animal</p>
+                <p class="logo2">Protection</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+        <div class="catch">
+            <div class="catchLeft">
+                <div data-aos="fade-up"
+                data-aos-duration="700" data-aos-easing="ease-in-sine" class="catchLeft1">地球を守る</div>
+            </div>
+            <div data-aos="fade-up"
+                data-aos-duration="1500" data-aos-anchor-placement ="top-bottom" data-aos-easing="ease-in-sine" class="catchRight">
+                <h2>5~10種類程度動物を想像してみてください。</h2>
+                <p>そのほとんどが絶滅に危機に瀕しています。</p>
+                <p>動物たちを守ることは生命の歴史を守ること、また複雑に絡み合って形成され支えられている我々の暮らしを守ることにつながります。</p>
+            </div>
+        </div>
+        </section>
+        <section class="section1">
+            <div id="redlist" class="redListConteiner">
+                <div class="redListText">
+                    <h2>絶滅の危機のリスト</h2>
+                    <p data-aos="fade-down"
+                    data-aos-duration="700" data-aos-anchor-placement ="top-bottom"  data-aos-easing="ease-out-sine" class="redList">
+                    <span data-aos="fade-down"
+                        data-aos-duration="850" data-aos-easing="ease-out-sine"  class="redListRed">RED</span> LIST</p>
+                    <p>絶滅危惧種とは、絶滅のおそれが生じている野生生物のことを指します。
+                        その原因には、開発によって生息地が減少したり、密猟などの乱獲や、環境汚染などで生息数を大きく減らしたことなどが挙げられます。また、近年は地球温暖化による生息環境の変化や消失、人間が持ち込んだ外来生物などによる影響も深刻になっています。
+                        </p>
+                    <p>絶滅のおそれのある野生生物をリストアップしまとめたものを「レッドリスト」と呼ばれ「レッドリスト」はスイスのグランに本部を置く、IUCN（国際自然保護連合）により発表されています。
+                    </p>
+                    <p>そのIUCNレッドリストには現在116,177種が掲載されています</p>
+                    <p>レッドリストは、失われつつある地球の自然の貴重さを公に示す、一つの大きな目安です。どのような地域の自然保護にも、役立つ可能性を秘めています。レッドリストをただのリストで終わらせるか、自然保護活動の基盤として活用するか。その価値は、私たち次第で決まります。</p>
+                </div>
+            </div>
+        </section>
+        <section class="side-scroll section" id="animalNow">
+                <div class="side-scroll-container container">
+                <h2 class="side-scroll-heading heading">
+                    動物たちの今
+                </h2>
+                <h2 class="side-scroll-heading1 heading">
+                    Endangered Animal
+                </h2>
+                <div class="side-scroll-list-wrapper">
+                    <div class="side-scroll-list">
+                    <div class="side-scroll-item" id="modal1"><p>Mammal</p><img src="../jpeg/koara.jpeg"></div>
+                    <div class="side-scroll-item" id="modal2"><p>Reptiles</p><img src="../jpeg/turtle.jpg"></div>
+                    <div class="side-scroll-item" id="modal3"><p>Birds</p><img src="../jpeg/hagetaka.jpeg"></div>
+                    <div class="side-scroll-item" id="modal4"><p>Amphibians</p><img src="../jpeg/aruma.jpg"></div>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section class="sdgsSection">
+            <div class="sdgsConteinar" id="sdgsAnk">
+                
+                <div class="sdgsText">
+                    <h2><span class="sdgs1">Animal Protection</span>と<spa class="sdgs2">SDGs</span></h2>
+                    <p>環境保全に取り組む私達の取り組みは、17あるSDGsのゴール、その全てにかかわっています。</p>
+
+                        <p>とりわけ、あらゆる問題の「基礎」にあたる環境分野、</p>
+                        <p class="sdgs13">「<span>目標13</span>：気候変動に具体的な対策を」</p>
+                        <div id="sdgSp13Conte" data-aos="zoom-in-left"><img src="../jpeg/incon1.png"></div>
+                        <p class="sdgs14">「<span>目標14</span>：海の豊かさを守ろう」</p>
+                        <div id="sdgSp14Conte" data-aos="zoom-in-right"><img src="../jpeg/incon2.png"></div>
+                        <p class="sdgs15">「<span>目標15</span>：陸の豊かさも守ろう」</p>
+                        <div id="sdgSp15Conte" data-aos="zoom-in-left"><img src="../jpeg/incon3.png"></div>
+                        <p class="sdgsEnd">これらの分野でそれぞれ求められているゴールは、いずれも相互に関係し、<br>総合的に実現を目指してまいります。</p>
+                       
+                </div>
+                <div class="sdgs">
+                    <div class="iconConteinar">
+                        <!-- <div class="SDGsRing"><img src="../jpeg/SDGsRing.png"></div> -->
+                        <div class="ao1" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="300" data-aos-anchor=".sdgs2" data-aos-offset="800"><img class="a" src="../jpeg/incon3.png"></div>
+                        <div class="ao2" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="700" data-aos-anchor=".sdgs2" data-aos-offset="800"><img class="b" src="../jpeg/incon2.png"></div>
+                        <div class="ao3" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos-anchor=".sdgs2" data-aos-offset="800"><img class="c" src="../jpeg/incon1.png"></div>
+                        <div class="allconte"><img class="all" src="../jpeg/sdgsAll.png"></div>
+                        <div><img class="ablack" src="../jpeg/black15.png"></div>
+                        <div><img class="bblack" src="../jpeg/black14.png"></div>
+                        <div><img class="cblack" src="../jpeg/balack13.png"></div>
+                        <div><p class="sdgsAP">Animal Protection</p><img class="sdgsLogo" src="../jpeg/sdglogop.png"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footConteiner">
+            <div class="footerBokin">
+            <a class="footerBokinA" href="./input.php">
+            <h1>寄付をする</h1>
+            <h2>Animal Protectionへご支援いただける方</h2>
+            </a>
+            </div>
+            <div class="footerClowd">
+                <a class="footerClowdA" href="./login.php"><div>
+                <h1>クラウドファンディング</h1>
+                <h2>ともに環境問題に取り組んでいただける方</h2>
+                </div></a>
+            </div>
+        </div>
+            <p><a class="TopIndex" href="./index.html">TOP</a></p>
+            <p>Copyright 2022 Animal Protection</p>
+    </footer>
+    <section id="modalArea" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <div class="modalMin">
+            <h2>哺乳類</h2><h3>mammals</h3>
+            </div>
+            <div class="modalTextContent">
+                <div class="chart">
+                <canvas id="myPieChart"></canvas>
+                </div>
+                <p>代表:ホワイトタイガー,ジャイアントパンダ,ホッキョクグマ,ジュゴンetc<br>
+                約21%が絶滅危惧種としてRedListに指定されています<br>
+                最近では2月12日にオーストラリア政府がコアラを絶滅危惧種と指定しました</p>
+            </div>
+          </div>
+          <div id="closeModal" class="closeModal">
+            ×
+          </div>
+        </div>
+      </section>
+
+      <section id="modalArea2" class="modalArea2">
+        <div id="modalBg2" class="modalBg2"></div>
+        <div class="modalWrapper2">
+          <div class="modalContents2">
+            <div class="modalMin2">
+            <h2>爬虫類</h2><h3>reptiles</h3>
+            </div>
+            <div class="modalTextContent2">
+                <div class="chart2">
+                <canvas id="myPieChart2"></canvas>
+                </div>
+                <p>代表:アオウミガメ,ニホンスッポンetc<br>
+                約37%が絶滅危惧種としてRedListに指定されています<br>
+                アオウミガメは厳しい自然の中で1年以上生き続けられるものはごくわずか<br>
+                さらに、成長したカメは外海で漁業用の網に引っ掛ったり、汚染などで死亡するものが少なくありません</p>
+            </div>
+          </div>
+          <div id="closeModal2" class="closeModal2">
+            ×
+          </div>
+        </div>
+      </section>
+
+      <section id="modalArea3" class="modalArea3">
+        <div id="modalBg3" class="modalBg3"></div>
+        <div class="modalWrapper3">
+          <div class="modalContents3">
+            <div class="modalMin3">
+            <h2>鳥類</h2><h3>Birds</h3>
+            </div>
+            <div class="modalTextContent3">
+                <div class="chart3">
+                <canvas id="myPieChart3"></canvas>
+                </div>
+                <p>代表:シロフクロウ,ハゲワシetc<br>
+                約14%が絶滅危惧種としてRedListに指定されています<br>
+                ハリーポッターのペットでも有名なシロフクロウ<br>
+                近年の温暖化が原因で主食であるレミング(ネズミの一種)の発生に異変が生じそれに影響されてシロフクロウも生息数が減ってしまっています</p>
+            </div>
+          </div>
+          <div id="closeModal3" class="closeModal3">
+            ×
+          </div>
+        </div>
+      </section>
+
+      <section id="modalArea4" class="modalArea4">
+        <div id="modalBg4" class="modalBg4"></div>
+        <div class="modalWrapper4">
+          <div class="modalContents4">
+            <div class="modalMin4">
+            <h2>両生類</h2><h3>Amphibians</h3>
+            </div>
+            <div class="modalTextContent4">
+                <div class="chart4">
+                <canvas id="myPieChart4"></canvas>
+                </div>
+                <p>代表:サンショウウオ,ニホンヒキガエルetc<br>
+                約33%が絶滅危惧種としてRedListに指定されています<br>
+                原因として多く考えられるのは水の汚染<br>
+                水の汚染は川に排水が直接流れ込むケース以外に周囲の土に散布された農薬などが溶け込んでも起こります</p>
+            </div>
+          </div>
+          <div id="closeModal4" class="closeModal4">
+            ×
+          </div>
+        </div>
+      </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/style.js"></script>
+    <script src="../js/demo.js"></script>
+    <script src="https://tympanus.net/Tutorials/CSSGlitchEffect/js/imagesloaded.pkgd.min.js"></script>
+  </body>
+</html>

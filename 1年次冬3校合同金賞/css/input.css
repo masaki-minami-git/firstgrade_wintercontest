@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+input,
+button,
+select,
+textarea,
+button {
+  background-color: transparent;
+  border: 1px #8b8b8b solid;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #ddd;
+  text-decoration: none;
+}
+
+header p {
+  transform: scaleY(1.1);
+  transform: scaleX(0.99);
+  line-height: 2.4rem;
+  padding-left: 1.6rem;
+  font-size: 2.4rem;
+  font-family: 'Playfair Display', serif;
+  color: #7d2030;
+}
+
+header p a:link, header p a:visited, header p a:hover, header p a:active {
+  color: #7d2030;
+  text-decoration: none;
+}
+
+header h2 {
+  font-size: 2.1rem;
+}
+
+header .navi {
+  height: 100px;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(160, 160, 160, 0.075);
+  box-shadow: rgba(134, 134, 134, 0.3) 0.5px 1px 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navi ul {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navi ul li {
+  text-align: center;
+  list-style: none;
+  width: 15%;
+}
+
+header .navi ul li a:link, header .navi ul li a:visited, header .navi ul li a:hover, header .navi ul li a:active {
+  color: #333;
+  text-decoration: none;
+}
+
+header .navi ul li:nth-of-type(1) {
+  margin-left: 20%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  border-left: #8b8b8b solid 1px;
+  border-right: #8b8b8b solid 1px;
+}
+
+main .inputConte {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .inputConte .tigerIcon {
+  position: absolute;
+  bottom: 0;
+  width: 25%;
+}
+
+main .inputConte .tigerIcon img {
+  width: 100%;
+  object-fit: contain;
+}
+
+main .inputConte .inputConteMin {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+main .inputConte .inputConteMin h1 {
+  color: #4c4a4a;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+main .inputConte .inputConteMin .form {
+  margin: 0 auto;
+  width: 80%;
+}
+
+main .inputConte .inputConteMin .form p {
+  color: #4c4a4a;
+  text-align: left;
+  padding-left: 28%;
+  font-size: 14px;
+}
+
+main .inputConte .inputConteMin .form input:nth-of-type(1) {
+  padding: 15px;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+main .inputConte .inputConteMin .form input:nth-of-type(2) {
+  padding: 15px;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+main .inputConte .inputConteMin .form button {
+  display: block;
+  width: 46%;
+  color: #fff;
+  background-color: #3ac287;
+  box-shadow: none;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 15px;
+  font-weight: bold;
+  margin-bottom: 10%;
+  font-size: 1.1rem;
+}
+
+footer {
+  z-index: 999;
+  height: 100vh;
+  color: #ddd;
+  width: 100vw;
+  background-color: #7d2030;
+}
+
+footer .footConteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .footConteiner .footerBokin {
+  font-size: 1.1rem;
+  margin-top: 25%;
+  text-align: center;
+}
+
+footer .footConteiner .footerBokin .footerBokinA:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
+footer .footConteiner .footerBokin a {
+  transition: 1s;
+  display: block;
+  width: 100%;
+}
+
+footer .footConteiner .footerBokin a:link, footer .footConteiner .footerBokin a:visited, footer .footConteiner .footerBokin a:hover, footer .footConteiner .footerBokin a:active {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer .footConteiner .footerBokin h2 {
+  font-size: 1.1rem;
+}
+
+footer .footConteiner .footerClowd {
+  font-size: 1.1rem;
+  margin-top: 25%;
+  text-align: center;
+}
+
+footer .footConteiner .footerClowd .footerClowdA:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
+footer .footConteiner .footerClowd a {
+  transition: 1s;
+  display: block;
+  width: 100%;
+}
+
+footer .footConteiner .footerClowd a:link, footer .footConteiner .footerClowd a:visited, footer .footConteiner .footerClowd a:hover, footer .footConteiner .footerClowd a:active {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer .footConteiner .footerClowd h2 {
+  font-size: 1rem;
+}
+
+footer p:nth-of-type(1) {
+  margin-top: 18%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+footer p:nth-of-type(1) .topIndex {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+footer p:nth-of-type(2) {
+  margin-top: 2%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.logoSp {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  .logoSp {
+    display: block;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #7d2030;
+  }
+  .logoSp a:link, .logoSp a:visited, .logoSp a:hover, .logoSp a:active {
+    color: #7d2030;
+    text-decoration: none;
+  }
+  .logoA {
+    display: none;
+  }
+  .navUl {
+    display: none !important;
+  }
+  .inputConteMin {
+    width: 90% !important;
+  }
+  p {
+    padding-left: 1rem !important;
+  }
+  input {
+    width: 80% !important;
+  }
+  button {
+    width: 90% !important;
+  }
+  .footer {
+    background-color: #7d2030;
+    position: relative;
+  }
+  .footer .footConteiner {
+    padding-top: 30%;
+    display: block;
+  }
+  .footer .footConteiner .footerBokin {
+    transform: scale(0.7);
+  }
+  .footer .footConteiner .footerClowd {
+    transform: scale(0.7);
+  }
+  .footer p:nth-of-type(1) {
+    position: absolute;
+    bottom: 15% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+  .footer p:nth-of-type(2) {
+    position: absolute;
+    bottom: 5% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+}
+/*# sourceMappingURL=input.css.map */

@@ -1,0 +1,687 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 2.4rem;
+    line-height: 2;
+}
+h2{
+    font-size: 2.1rem;
+    line-height: 2.2285;
+}
+h3{
+    font-size: 1.8rem;
+    line-height: 1.333;
+}
+h4,h5,h6{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+input,
+button,
+select,
+textarea,
+button{
+    background-color: transparent;
+    border: 1px #8b8b8b solid;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+body{
+    header{
+        a:link, a:visited, a:hover, a:active {
+            color: #7d2030;
+            text-decoration:none; 
+        }
+        backdrop-filter: blur(5px);
+        background-color: rgba(160, 160, 160, 0.075);
+        box-shadow: rgba(134, 134, 134, 0.3) 0.5px 1px 1px;
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        height: 78px;
+        h1{
+            line-height: 78px;
+            padding-left: 1rem;
+            font-size: 2.4rem;
+            font-family: 'Playfair Display', serif;
+            color: #7d2030;
+        }
+        h2{
+            font-size: 2.1rem;
+        }
+    }
+    nav{
+        
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            a{
+                border-bottom: #d3d3d3  1px solid;
+                width: 50%;
+                height: 4rem;
+                li{
+                    text-align: center;
+                    line-height: 4rem;
+                    list-style: none;
+                    font-size: 1.2rem;
+                }
+            }
+            a:link, a:visited, a:hover, a:active {
+                color: #4c4a4a;
+                text-decoration:none; 
+            }
+            a:nth-of-type(1){
+                border-right: #d3d3d3  1px solid;
+            }
+
+        }
+    }
+    main{
+        .lineF{
+            width: 300px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 5rem;
+            margin-top: 5rem;
+            .lineF2{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .lineFrend{
+            display: none;
+        }
+        //listDun
+        .listWrap{
+            margin: 0 auto;
+            width: 100%;
+            .categorySearch{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #f5f8fa;
+                width: 100vw;
+                .listFuncategoryConte{
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    width: 50%;
+                    .listFun{
+                        select{
+                            text-align: center;
+                            height:3.5rem;
+                            border:1px #d3d3d3 solid;
+                            background-color: #fff !important;
+                            outline:none;
+                            display: inline-block;
+                            -webkit-appearance:none;
+                            -moz-appearance:none;
+                            appearance:none;
+                            cursor:pointer;
+                            font-size:16px;
+                            color: #8b8b8b;
+                            border-radius:5px;
+                            width:90%;
+                            z-index:2;
+                            background:transparent;
+                          }
+
+                          
+                }
+    
+                }
+    
+            }
+
+        }
+        .givFunConte{
+            margin-top: 10%;
+        }
+        .funListContainer{
+            width: 92%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .funListBox{
+                // position: relative;
+                box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+                margin-top: 10%;
+                width: 48%;
+                min-height: auto;
+                a:link, a:visited, a:hover, a:active {
+                    color: #4c4a4a;
+                    text-decoration:none; 
+                }
+                a{
+                    
+                    .funImg{
+                        width:100%;
+                        height: 50%;
+                        overflow: hidden;
+                        align-items: center;
+                        display: flex;
+                        margin-bottom: 1rem;
+                        img{
+                            display: block;
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    .listNakami{
+                        .listTitle{
+                            // height: 3rem;
+                            padding-left: 3%;
+                            line-height: 2;
+                            font-weight: bold;
+                            font-size: 1.4rem;
+                            margin-bottom: 1rem;
+                        }
+                        margin-bottom: 2rem;
+                    }
+                    .funListMini{
+                        // text-align: center;
+                        // position: absolute;
+                        bottom: 5%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        // margin-bottom: 10%;
+                        width: 90%;
+                        padding-left: 5%;
+                        .listYen{
+                            height: 3rem;
+                            width: 50%;
+                            .listYenB{
+                                font-size: 1rem !important;
+                                // margin-top: 1rem;
+                            }
+                            .listYenM{
+                                font-size: 1.1rem !important;
+                                padding-left: 3%;
+                                font-weight: bold;
+                            }
+                        }
+                        .timeStamp{
+                            width: 50%;
+                            height: 3rem;
+                            .timeStampP{
+                                text-align: right;
+                                font-size: 1rem !important;
+                                padding-right: 3%;
+                                line-height: 3rem;
+                            }
+
+                        }
+                    }
+                }
+            }
+            
+        }
+        .paging{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .pageAnk{
+                margin: 20px;
+                a:link, a:visited, a:hover, a:active {
+                    // color: #4c4a4a;
+                    text-decoration:none; 
+                }
+                a{
+                    color: #f5f8fa;
+                    line-height: 2rem;
+                    font-size: 1.4rem;
+                }
+                padding: 0.5rem 1rem;
+                border-radius: 3px;
+                background-color: rgba(125, 32, 48, 0.8);
+            }
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        min-height: 80vh;
+        //ログイン
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            background-color: #f5f8fa;
+            min-height: 80vh;
+            .torokuKanD{
+                margin-top: 5rem;
+                .tourokuKanA{
+                    display: block;
+                }
+                .toukouKanOutputFun{
+                    .toukouKanOutputFunA{
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+                }
+            }
+
+            //金額確認
+            .giveMoney{
+                
+                .loginForm{
+                    .giveMoneyP{
+                        padding-left: 5%;
+                    }
+                }
+            }
+            .checkGiveConte{
+                .CheckGiveH2{
+                    margin-top: 2rem;
+                    text-align: center;
+                    color: #4c4a4a;
+                }
+                .CheckGiveP{
+                    color: #4c4a4a;
+                    margin-top: 2rem;
+                    padding-left: 5%;
+                }
+                .button{
+                    display: block;
+                    width: 90%;
+                    color: #fff;
+                    background-color: #3ac287;
+                    box-shadow: none;
+                    margin: 0 auto;
+                    margin-top: 10%;
+                    padding: 15px;
+                    font-weight: bold;
+                    margin-bottom: 10%;
+                    border-radius: 5px;
+                }
+
+            }
+
+            //チェックアウトプット
+            .checkOutputKakunin{
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                font-size: 1.4rem;
+                color: #4c4a4a;
+                padding: 5rem;
+                text-align: center;
+                margin: 0 auto;
+                // border-bottom: rgb(195, 195, 195) 1px solid;
+                width: 200px;
+            }
+            .checkOutputFunConte{
+                overflow: hidden;
+                padding-bottom: 5rem;
+                .checkOutputImg{
+                    img{
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                    margin-bottom: 2rem;
+                }
+
+                h3{
+                    text-align: center;
+                    font-size: 2.1rem;
+                    color: #4c4a4a;
+                    margin-bottom: 2rem;
+                }
+                .checkMinConte{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    margin-bottom: 2rem;
+                    .checkName{
+                        p{
+                            color: #4c4a4a;
+                        }
+                        i{
+                            color: #8b8b8b;
+                        }
+                    }
+                    .checkGenre{
+                        p{
+                            color: #4c4a4a;
+                        }
+                        i{
+                            color: #8b8b8b;
+                        }
+                    }
+
+                }
+                .checkMinConte2{
+                    padding-bottom: 2rem;
+                    background-color: #fff;
+                    width: 90%;
+                    margin: 0 auto;
+                    border-radius: 5px;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 2.6px 0px;
+                        .checkMinConteKingaku{
+                            padding-left: 10%;
+                            padding-top: 2rem;
+                            padding-bottom: 2rem;
+                            padding-right: 10%;
+                            color: #4c4a4a;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .checkMinConteKingakuMin{
+                                p:nth-of-type(1){
+                                    font-weight: lighter;
+                                    padding-bottom: 1rem;
+                                }
+                                p:nth-of-type(2){
+                                    line-height: 2rem;
+                                    font-weight: bold;
+                                    font-size: 1.8rem;
+                                }
+                            }
+                            .checkMinConteKingakuMin2{
+                                p:nth-of-type(1){
+                                    font-weight: lighter;
+                                    padding-bottom: 1rem;
+                                }
+                                p:nth-of-type(2){
+                                    line-height: 2rem;
+                                    font-weight: bold;
+                                    font-size: 1.8rem;
+                                }
+                            }
+                        }
+                }
+                .checkMatter{
+                    color: #4c4a4a;
+                    padding: 10%;
+                    
+                    .checkMatterT{
+                        height: 3rem;
+                    }
+                }
+                .sienSuru{
+                    margin: 0 auto;
+                    width: 80%;
+                    padding: 1rem;
+                    font-size: 1.6rem;
+                    .sienSuru2{
+                        text-align: center;
+                        display: block;
+                    }
+                    a:link, a:visited, a:hover, a:active {
+                        color: #fff;
+                        text-decoration:none; 
+                    }
+                    background-color: #e75d65;
+                    color: #fff;
+                    border-radius: 5px;
+                    margin-bottom: 5rem;
+                }
+            }
+
+
+            .loginTitle{
+                color: #4c4a4a;
+                padding: 5rem;
+                text-align: center;
+                margin: 0 auto;
+                border-bottom: rgb(195, 195, 195) 1px solid;
+                width: 200px;
+            }
+            .loginForm{
+                .cateIn{
+                    margin-top: 2rem;
+                }
+                color: #8b8b8b;
+                margin-top: 5rem;
+                padding-bottom: 10rem !important;
+                line-height: 3rem;
+                text-align: center;
+                padding: 30px;
+                span{
+                    margin-left: 30px;
+                }
+                p{
+                    // padding: 0 28%;
+                    text-align: left;
+                }
+                input:nth-of-type(1){
+                    padding: 15px;
+                    width: 90%;
+                    margin-bottom: 2rem;
+                }
+                input:nth-of-type(2){
+                    padding: 15px;
+                    width: 90%;
+                    margin-bottom: 2rem;
+                }
+                input:nth-of-type(3){
+                    padding: 15px;
+                    width: 90%;
+                    margin-bottom: 2rem;
+                }
+                input:nth-of-type(4){
+                    padding: 15px;
+                    width: 90%;
+                    margin-bottom: 2rem;
+                }
+                textarea{
+                    height: 300px;
+                    padding: 15px;
+                    width: 90%;
+                }
+                button{
+                    display: block;
+                    width: 90%;
+                    color: #fff;
+                    background-color: #3ac287;
+                    box-shadow: none;
+                    margin: 0 auto;
+                    margin-top: 10%;
+                    padding: 15px;
+                    font-weight: bold;
+                    margin-bottom: 10%;
+                }
+                .giveM{
+                    background-color: #3ac287;
+                    border-radius: 5px;
+                }
+
+                //inputFun確認ページへ
+
+                .checkFunPut{
+                    display: block;
+                    width: 90%;
+                    color: #fff;
+                    background-color: #51c3d3;
+                    box-shadow: none;
+                    margin: 0 auto;
+                    margin-top: 10%;
+                    padding: 15px;
+                    font-weight: bold;
+                }
+                select{
+                    text-align: center;
+                    height: 3.5rem;
+                    border: 1px #d3d3d3 solid;
+                    background-color: #fff !important;
+                    outline: none;
+                    display: inline-block;
+                    appearance: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    color: #45a3af;
+                    border-radius: 5px;
+                    width: 90%;
+                    z-index: 2;
+                    background: transparent;
+                }
+            }
+            .addKaiin{
+                font-size: 1.6rem;
+                text-align: center;
+                // padding-top: 5rem;
+                padding-bottom: 10rem;
+            }
+        }
+        .loginErrorConte{
+            div{
+                padding-top: 10%;
+            }
+            p{
+                line-height: 2rem;
+            }
+            p:nth-of-type(3){
+                margin-top: 5rem;
+            }
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            background-color: #f5f8fa;
+            min-height: 80vh;
+        }
+        .btn{
+            display: block;
+            width: 90%;
+            color: #fff;
+            background-color: #51c3d3;
+            box-shadow: none;
+            margin: 0 auto;
+            margin-top: 10%;
+            padding: 15px;
+            font-weight: bold;
+        }
+    }
+    footer{
+        background-color: #7d2030;
+        // height: 500px;
+        color: #ddd;
+        // height: 100%;
+        text-align: center;
+        margin-top: 5rem;
+        .footConteiner{
+            display: flex;
+            justify-content: space-around;
+            .footerBokin{
+                margin: 10% 0;
+                width: 30%;
+                a{
+                    display: block;
+                }
+                a:link, a:visited, a:hover, a:active {
+                    color: #ddd;
+                    text-decoration:none; 
+                }
+            }
+            .footerTop{
+                margin: 10% 0;
+                width: 30%;
+                    a{
+                        display: block;
+                    }
+                    a:link, a:visited, a:hover, a:active {
+                        color: #ddd;
+                        text-decoration:none; 
+                    }
+            }
+        }
+        .copyright{
+            padding: 3%;
+            font-style: italic;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+//PCブレイクポイント
+
+@media screen and (min-width: 1024px) {
+
+    .container{
+        width: 420px !important;
+    }
+    .footConteiner{
+        height: 100px !important;
+        .footerBokin{
+            margin-top: 5rem !important;
+        }
+        .footerTop{
+            margin-top: 5rem !important;
+        }
+    }
+    .funListContainer{
+        width: 50%  !important;
+    }
+    .lineFrend{
+        img{
+            width: 100%;
+        }
+        right: 3rem;
+
+        margin-top: 3rem;
+        // margin-bottom: 3%;
+        position: fixed;
+        width: 300px;
+        z-index: -10;
+        display: block !important;
+    }
+    .lineF{
+        display: none !important;
+    }
+}
+
+//パーセント用
+
+#parsentConte{
+    position: relative;
+    background-color: #e4e4e4;
+    overflow: hidden;
+    width: 80%;
+    height: 18px;
+    margin: 0 auto;
+    border-radius: 10px;
+    #width{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(-135deg, #ff4f44, #ffbf3d);
+        height: 18px;
+        width: 0%;
+        z-index: 999;
+        border-radius: 10px;
+    }
+    #parsentMath{
+        font-size: 12px;
+        // margin-left: 5%;
+        // position: absolute;
+        color: #fff;
+        z-index: 999;
+    }
+    .parsentMath2{
+        // padding-left: 10%;
+        font-size: 12px;
+        margin-left: 5%;
+        position: absolute;
+        color: #fff;
+        z-index: 999;
+    }
+}
